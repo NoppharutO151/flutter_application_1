@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/model/recipe.dart';
 import 'package:flutter_application_1/recipe_detail.dart';
+import 'package:flutter_application_1/model/ingredient.dart';
 
 void main() {
   runApp(const RecipeApp());
@@ -66,6 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   );
                 },
                 child: buildRecipeCard(Recipe.samples[index]),
+
               );
             },
             itemCount: Recipe.samples.length,
